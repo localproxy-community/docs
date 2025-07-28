@@ -1,0 +1,57 @@
+---
+title: OpenAI
+description: Step-by-step guide to create an OpenAI API key and configure it in LocalProxy
+---
+
+# Setting up OpenAI with LocalProxy
+
+This guide walks you through creating an OpenAI API key and configuring it in LocalProxy to intercept and manage AI API requests.
+
+## Prerequisites
+
+- LocalProxy installed and running
+- An OpenAI account (create one at [platform.openai.com](https://platform.openai.com))
+
+## Step 1: Create an OpenAI API Key
+
+1. **Log in to OpenAI Platform**
+
+   - Navigate to [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+   - Sign in with your OpenAI account
+
+2. **Create a New API Key**
+
+   - Click the **"Create new secret key"** button
+   - Give your key a descriptive name (e.g., "LocalProxy Integration")
+   - Select permissions if prompted (typically "All")
+
+**Important**: Copy the API key immediately - you won't be able to see it again
+
+## Step 2: Configure OpenAI in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy if not already running
+   - Click on **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - In the Settings page, find and click on **AI Providers**
+   - This section manages all AI service configurations
+
+3. **Add OpenAI Provider**
+
+   - Click the **Add** button
+   - From the provider list, select **OpenAI**
+
+4. **Enter Your API Key**
+
+   - Paste the API key you copied from OpenAI
+   - Give it a friendly name (optional)
+   - Configure any additional settings:
+     - **Base URL**: Leave default unless using a proxy
+     - **Model preferences**: Select default models if needed
+
+5. **Save Configuration**
+   - Click **Save** to store your OpenAI configuration
+   - You should see OpenAI listed in your AI Providers
