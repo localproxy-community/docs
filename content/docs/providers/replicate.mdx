@@ -1,0 +1,43 @@
+---
+title: Replicate
+description: Step-by-step guide to create a Replicate API token and configure it in LocalProxy
+---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- A Replicate account (create one at [replicate.com](https://replicate.com))
+
+## Step 1: Create a Replicate API Token
+
+1. **Log in to Replicate**
+
+   - Navigate to [replicate.com/account/api-tokens](https://replicate.com/account/api-tokens)
+
+2. **Create a New Token**
+   - Click **Create token** and name it (e.g., “LocalProxy Integration”)
+
+**Important**: Copy the token immediately after creation.
+
+## Step 2: Configure Replicate in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy and click **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - Select **AI Providers**, then click **Add**
+
+3. **Add Replicate Provider**
+
+   - From the provider list, select **Replicate**
+
+4. **Enter Connection Details**
+
+   - **Base URL**: Leave default unless using a proxy (default `https://api.replicate.com/v1`)
+   - **API Key**: Paste your Replicate token
+   - **Model preferences**: Provide the model slug or owner/name (e.g., `meta/meta-llama-3-8b-instruct:latest`, `mistralai/mixtral-8x7b-instruct:latest`)
+
+5. **Save Configuration**
+   - Click **Save** and ensure Replicate appears in your AI Providers

@@ -1,0 +1,43 @@
+---
+title: Hugging Face
+description: Step-by-step guide to create a Hugging Face token and configure it in LocalProxy
+---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- A Hugging Face account (create one at [huggingface.co](https://huggingface.co))
+
+## Step 1: Create a Hugging Face Token
+
+1. **Log in to Hugging Face**
+
+   - Navigate to [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
+
+2. **Create a New Access Token**
+   - Click **New token**, choose the appropriate scope, and name it (e.g., “LocalProxy Integration”)
+
+**Important**: Copy the token immediately after creation.
+
+## Step 2: Configure Hugging Face in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy and click **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - Select **AI Providers**, then click **Add**
+
+3. **Add Hugging Face Provider**
+
+   - From the provider list, select **Hugging Face**
+
+4. **Enter Connection Details**
+
+   - **Base URL**: Leave default unless using a proxy (default `https://api-inference.huggingface.co`)
+   - **API Key**: Paste your Hugging Face token (starts with `hf_`)
+   - **Model preferences**: Provide a model path (e.g., `meta-llama/Meta-Llama-3-8B-Instruct`, `mistralai/Mixtral-8x7B-Instruct-v0.1`)
+
+5. **Save Configuration**
+   - Click **Save** and ensure Hugging Face appears in your AI Providers

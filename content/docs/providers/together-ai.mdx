@@ -1,0 +1,43 @@
+---
+title: Together AI
+description: Step-by-step guide to create a Together AI API key and configure it in LocalProxy
+---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- A Together AI account (create one at [together.ai](https://www.together.ai))
+
+## Step 1: Create a Together API Key
+
+1. **Log in to Together**
+
+   - Go to [api.together.xyz/settings/api-keys](https://api.together.xyz/settings/api-keys)
+
+2. **Create a New API Key**
+   - Click **Create new key** and name it (e.g., “LocalProxy Integration”)
+
+**Important**: Copy the API key immediately after creation.
+
+## Step 2: Configure Together in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy and click **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - Select **AI Providers**, then click **Add**
+
+3. **Add Together Provider**
+
+   - From the provider list, select **Together AI** (OpenAI-compatible)
+
+4. **Enter Connection Details**
+
+   - **Base URL**: Leave default unless using a proxy (default `https://api.together.xyz/v1`)
+   - **API Key**: Paste your Together API key
+   - **Model preferences**: Choose a model (e.g., `meta-llama/Meta-Llama-3-8B-Instruct`, `mistralai/Mixtral-8x7B-Instruct-v0.1`, `Qwen/Qwen2-72B-Instruct`)
+
+5. **Save Configuration**
+   - Click **Save** and ensure Together AI appears in your AI Providers

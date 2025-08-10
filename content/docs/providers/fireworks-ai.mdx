@@ -1,0 +1,43 @@
+---
+title: Fireworks AI
+description: Step-by-step guide to create a Fireworks AI API key and configure it in LocalProxy
+---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- A Fireworks AI account (create one at [app.fireworks.ai](https://app.fireworks.ai))
+
+## Step 1: Create a Fireworks API Key
+
+1. **Log in to Fireworks**
+
+   - Navigate to [app.fireworks.ai](https://app.fireworks.ai) and open the API Keys section
+
+2. **Create a New API Key**
+   - Click **Create Key** and name it (e.g., “LocalProxy Integration”)
+
+**Important**: Copy the API key immediately after creation.
+
+## Step 2: Configure Fireworks in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy and click **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - Select **AI Providers**, then click **Add**
+
+3. **Add Fireworks Provider**
+
+   - From the provider list, select **Fireworks AI** (OpenAI-compatible)
+
+4. **Enter Connection Details**
+
+   - **Base URL**: Leave default unless using a proxy (default `https://api.fireworks.ai/inference/v1`)
+   - **API Key**: Paste your Fireworks API key
+   - **Model preferences**: Choose a model (e.g., `accounts/fireworks/models/llama-v3-8b-instruct`, `accounts/fireworks/models/mixtral-8x7b-instruct`)
+
+5. **Save Configuration**
+   - Click **Save** and ensure Fireworks AI appears in your AI Providers

@@ -1,0 +1,44 @@
+---
+title: Anyscale
+description: Step-by-step guide to create an Anyscale API key and configure it in LocalProxy
+---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- An Anyscale Endpoints account (create one at [app.endpoints.anyscale.com](https://app.endpoints.anyscale.com))
+
+## Step 1: Create an Anyscale API Key
+
+1. **Log in to Anyscale Endpoints**
+
+   - Go to [app.endpoints.anyscale.com](https://app.endpoints.anyscale.com)
+
+2. **Create a New API Key**
+   - Navigate to the API Keys section
+   - Click **Create API Key** and give it a descriptive name (e.g., “LocalProxy Integration”)
+
+**Important**: Copy the API key immediately after creation.
+
+## Step 2: Configure Anyscale in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy and click **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - Select **AI Providers**, then click **Add**
+
+3. **Add Anyscale Provider**
+
+   - From the provider list, select **Anyscale**
+
+4. **Enter Connection Details**
+
+   - **Base URL**: Leave default unless using a proxy (default `https://api.endpoints.anyscale.com/v1`)
+   - **API Key**: Paste your Anyscale API key
+   - **Model preferences**: Choose a supported model (e.g., `meta-llama/Meta-Llama-3-8B-Instruct`, `mistralai/Mixtral-8x7B-Instruct-v0.1`)
+
+5. **Save Configuration**
+   - Click **Save** and ensure Anyscale appears in your AI Providers

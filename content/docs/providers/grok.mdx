@@ -1,4 +1,53 @@
 ---
 title: Grok
-description: This guide shows how to setup Grok
+description: Step-by-step guide to create an xAI API key and configure it in LocalProxy
 ---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- An xAI account (create one at [console.x.ai](https://console.x.ai))
+
+## Step 1: Create an xAI API Key
+
+1. **Log in to xAI Console**
+
+   - Navigate to [console.x.ai](https://console.x.ai)
+   - Sign in with your xAI account
+
+2. **Create a New API Key**
+
+   - Go to the API keys section
+   - Click **Create API Key** and give it a descriptive name (e.g., “LocalProxy Integration”)
+
+**Important**: Copy the API key immediately after creation.
+
+## Step 2: Configure Grok in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy if not already running
+   - Click on **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - In the Settings page, select **AI Providers**
+   - Click **Add**
+
+3. **Add Grok Provider**
+
+   - From the provider list, select **Grok (xAI)** or **Grok**
+
+4. **Enter Your API Key**
+
+   - Paste the API key you copied from xAI
+   - Optionally, add a friendly name
+
+   - Additional settings:
+     - **Base URL**: Leave default unless using a proxy (default `https://api.x.ai/v1`)
+     - **Model preferences**: Select default models if needed (e.g., `grok-2`, `grok-2-mini`)
+
+5. **Save Configuration**
+
+   - Click **Save** to store your Grok configuration
+   - You should see Grok listed in your AI Providers

@@ -1,0 +1,43 @@
+---
+title: Mistral AI
+description: Step-by-step guide to create a Mistral API key and configure it in LocalProxy
+---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- A Mistral account (create one at [console.mistral.ai](https://console.mistral.ai))
+
+## Step 1: Create a Mistral API Key
+
+1. **Log in to Mistral Console**
+
+   - Navigate to [console.mistral.ai/api-keys/](https://console.mistral.ai/api-keys/)
+
+2. **Create a New API Key**
+   - Click **Create new key** and name it (e.g., “LocalProxy Integration”)
+
+**Important**: Copy the API key immediately after creation.
+
+## Step 2: Configure Mistral in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy and click **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - Select **AI Providers**, then click **Add**
+
+3. **Add Mistral Provider**
+
+   - From the provider list, select **Mistral AI**
+
+4. **Enter Connection Details**
+
+   - **Base URL**: Leave default unless using a proxy (default `https://api.mistral.ai/v1`)
+   - **API Key**: Paste your Mistral API key
+   - **Model preferences**: Choose a model (e.g., `mistral-small-latest`, `mistral-medium-latest`, `mistral-large-latest`, `open-mixtral-8x7b`)
+
+5. **Save Configuration**
+   - Click **Save** and ensure Mistral AI appears in your AI Providers

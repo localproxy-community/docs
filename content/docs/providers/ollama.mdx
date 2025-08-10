@@ -1,4 +1,64 @@
 ---
 title: Ollama
-description: This guide shows how to setup Ollama
+description: Step-by-step guide to connect Ollama and configure it in LocalProxy
 ---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- Ollama installed with at least one model downloaded
+
+## Step 1: Start the Ollama Server
+
+1. **Install and open Ollama**
+
+   - Download from [ollama.com](https://ollama.com) or install via Homebrew: `brew install ollama`
+
+2. **Pull a model**
+
+   - In a terminal, run: `ollama pull llama3` (or any model you prefer, e.g., `llama3.1:8b-instruct`)
+
+3. **Start the server**
+
+   - Run: `ollama serve`
+   - Default server URL: `http://127.0.0.1:11434`
+   - The REST API is available under `/api`
+
+4. **Verify the server**
+
+   - Open `http://127.0.0.1:11434/api/tags` in your browser
+   - You should see a JSON list of installed models
+
+5. **(Optional) Enable CORS**
+
+   - If you’re calling the server from a different origin, set:
+     - macOS/Linux: `export OLLAMA_ORIGINS=http://localhost:3000` (or `*` for any origin)
+     - Then start the server: `ollama serve`
+
+Alternative (background service on macOS via Homebrew):
+
+- `brew services start ollama`
+
+## Step 2: Configure Ollama in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy and click **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - Select **AI Providers**, then click **Add**
+
+3. **Add Ollama Provider**
+
+   - From the provider list, select **Ollama**
+
+4. **Enter Connection Details**
+
+   - **Base URL**: `http://127.0.0.1:11434`
+   - **API Key**: Not required (leave empty; if a key is mandatory, enter a placeholder like `ollama`)
+   - **Model preferences**: Choose an installed model (e.g., `llama3`)
+
+5. **Save Configuration**
+
+   - Click **Save** and ensure Ollama appears in your AI Providers

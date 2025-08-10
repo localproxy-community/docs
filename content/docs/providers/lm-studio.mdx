@@ -1,4 +1,57 @@
 ---
 title: LM Studio
-description: This guide shows how to setup LM Studio
+description: Step-by-step guide to connect LM Studio and configure it in LocalProxy
 ---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- LM Studio installed with at least one model downloaded
+
+## Step 1: Start the LM Studio Local Server
+
+1. **Open LM Studio**
+
+   - Launch the LM Studio app
+
+2. **Start the local server**
+
+   - Go to the **Developer** tab (Local Server)
+   - Toggle **Status** to **Running**
+   - Note the server URL (default: `http://127.0.0.1:1234`)
+   - The OpenAI-compatible endpoints are available under `/v1`
+
+3. **(Optional) Enable CORS**
+
+   - In **Settings**, enable **CORS** if you’re calling the server from a different origin
+
+4. **Verify the server**
+   - Open `http://127.0.0.1:1234/v1/models` in your browser
+   - You should see a JSON list of available models
+
+Alternative (CLI):
+
+- `lms server start` (add `--port 3000` and/or `--cors` if needed)
+
+## Step 2: Configure LM Studio in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy and click **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - Select **AI Providers**, then click **Add**
+
+3. **Add LM Studio Provider**
+
+   - From the provider list, select **LM Studio** (OpenAI-compatible)
+
+4. **Enter Connection Details**
+
+   - **Base URL**: `http://127.0.0.1:1234/v1` (adjust if you changed the port)
+   - **API Key**: Not required (leave empty; if a key is mandatory, enter a placeholder like `lmstudio`)
+   - **Model preferences**: Choose a downloaded model (e.g., `llama-3.2-1b`)
+
+5. **Save Configuration**
+   - Click **Save** and ensure LM Studio appears in your AI Providers

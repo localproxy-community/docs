@@ -1,0 +1,43 @@
+---
+title: OpenRouter
+description: Step-by-step guide to create an OpenRouter API key and configure it in LocalProxy
+---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- An OpenRouter account (create one at [openrouter.ai](https://openrouter.ai))
+
+## Step 1: Create an OpenRouter API Key
+
+1. **Log in to OpenRouter**
+
+   - Navigate to [openrouter.ai/keys](https://openrouter.ai/keys)
+
+2. **Create a New API Key**
+   - Click **Create Key** and name it (e.g., “LocalProxy Integration”)
+
+**Important**: Copy the API key immediately after creation.
+
+## Step 2: Configure OpenRouter in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy and click **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - Select **AI Providers**, then click **Add**
+
+3. **Add OpenRouter Provider**
+
+   - From the provider list, select **OpenRouter** (OpenAI-compatible)
+
+4. **Enter Connection Details**
+
+   - **Base URL**: Leave default unless using a proxy (default `https://openrouter.ai/api/v1`)
+   - **API Key**: Paste your OpenRouter API key
+   - **Model preferences**: Choose a model (e.g., `openai/gpt-4o-mini`, `anthropic/claude-3.5-sonnet`, `meta-llama/llama-3.1-8b-instruct`)
+
+5. **Save Configuration**
+   - Click **Save** and ensure OpenRouter appears in your AI Providers

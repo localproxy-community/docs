@@ -1,4 +1,21 @@
 {
   "title": "Providers",
-  "pages": ["openai", "claude", "lm-studio", "ollama", "grok", "gemini"]
+  "pages": [
+    "openai",
+    "claude",
+    "lm-studio",
+    "ollama",
+    "grok",
+    "gemini",
+    "mistral-ai",
+    "replicate",
+    "openrouter",
+    "huggingface",
+    "groq",
+    "fireworks-ai",
+    "deepinfra",
+    "cohere",
+    "anyscale",
+    "together-ai"
+  ]
 }

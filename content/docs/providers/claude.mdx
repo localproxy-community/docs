@@ -1,4 +1,54 @@
 ---
 title: Claude
-description: This guide shows how to setup Claude
+description: Step-by-step guide to create an Anthropic API key and configure it in LocalProxy
 ---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- An Anthropic account (create one at [console.anthropic.com](https://console.anthropic.com))
+
+## Step 1: Create an Anthropic API Key
+
+1. **Log in to Anthropic Console**
+
+   - Navigate to [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys)
+   - Sign in with your Anthropic account
+
+2. **Create a New API Key**
+
+   - Click **Create Key**
+   - Give your key a descriptive name (e.g., "LocalProxy Integration")
+   - Choose the appropriate workspace if prompted
+
+**Important**: Copy the API key immediately after creation.
+
+## Step 2: Configure Claude in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy if not already running
+   - Click on **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - In the Settings page, select **AI Providers**
+
+3. **Add Claude Provider**
+
+   - Click **Add**
+   - From the provider list, select **Claude (Anthropic)** or **Claude**
+
+4. **Enter Your API Key**
+
+   - Paste the API key you copied from Anthropic
+   - Optionally, add a friendly name
+
+   - Additional settings:
+     - **Base URL**: Leave default unless using a proxy (default `https://api.anthropic.com`)
+     - **Model preferences**: Select default models if needed
+
+5. **Save Configuration**
+
+   - Click **Save** to store your Claude configuration
+   - You should see Claude listed in your AI Providers

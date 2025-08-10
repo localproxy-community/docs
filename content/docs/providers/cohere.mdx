@@ -1,0 +1,43 @@
+---
+title: Cohere
+description: Step-by-step guide to create a Cohere API key and configure it in LocalProxy
+---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- A Cohere account (create one at [dashboard.cohere.com](https://dashboard.cohere.com))
+
+## Step 1: Create a Cohere API Key
+
+1. **Log in to Cohere Dashboard**
+
+   - Navigate to [dashboard.cohere.com/api-keys](https://dashboard.cohere.com/api-keys)
+
+2. **Create a New API Key**
+   - Click **Create API Key** and name it (e.g., “LocalProxy Integration”)
+
+**Important**: Copy the API key immediately after creation.
+
+## Step 2: Configure Cohere in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy and click **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - Select **AI Providers**, then click **Add**
+
+3. **Add Cohere Provider**
+
+   - From the provider list, select **Cohere**
+
+4. **Enter Connection Details**
+
+   - **Base URL**: Leave default unless using a proxy (default `https://api.cohere.com/v1`)
+   - **API Key**: Paste your Cohere API key
+   - **Model preferences**: Choose a model (e.g., `command`, `command-r`, `command-r-plus`, `command-light`)
+
+5. **Save Configuration**
+   - Click **Save** and ensure Cohere appears in your AI Providers

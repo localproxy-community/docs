@@ -1,4 +1,53 @@
 ---
 title: Gemini
-description: This guide shows how to setup Gemini
+description: Step-by-step guide to create a Gemini API key and configure it in LocalProxy
 ---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- A Google account with access to the Gemini API (via Google AI Studio at [aistudio.google.com](https://aistudio.google.com))
+
+## Step 1: Create a Gemini API Key
+
+1. **Log in to Google AI Studio**
+
+   - Navigate to [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
+   - Sign in with your Google account
+
+2. **Create a New API Key**
+
+   - Click **Create API key**
+   - Give it a descriptive name (e.g., “LocalProxy Integration”)
+
+**Important**: Copy the API key immediately after creation.
+
+## Step 2: Configure Gemini in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy if not already running
+   - Click on **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - In the Settings page, select **AI Providers**
+   - Click **Add**
+
+3. **Add Gemini Provider**
+
+   - From the provider list, select **Gemini**
+
+4. **Enter Your API Key**
+
+   - Paste the API key you copied from Google AI Studio
+   - Optionally, add a friendly name
+
+   - Additional settings:
+     - **Base URL**: Leave default unless using a proxy (default `https://generativelanguage.googleapis.com/v1`)
+     - **Model preferences**: Select default models if needed (e.g., `gemini-1.5-flash`, `gemini-1.5-pro`)
+
+5. **Save Configuration**
+
+   - Click **Save** to store your Gemini configuration
+   - You should see Gemini listed in your AI Providers

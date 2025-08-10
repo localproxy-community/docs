@@ -1,0 +1,43 @@
+---
+title: Groq
+description: Step-by-step guide to create a Groq API key and configure it in LocalProxy
+---
+
+## Prerequisites
+
+- LocalProxy installed and running
+- A Groq account (create one at [console.groq.com](https://console.groq.com))
+
+## Step 1: Create a Groq API Key
+
+1. **Log in to Groq Console**
+
+   - Navigate to [console.groq.com/keys](https://console.groq.com/keys)
+
+2. **Create a New API Key**
+   - Click **Create API Key** and name it (e.g., “LocalProxy Integration”)
+
+**Important**: Copy the API key immediately after creation.
+
+## Step 2: Configure Groq in LocalProxy
+
+1. **Open LocalProxy Settings**
+
+   - Launch LocalProxy and click **Settings** in the sidebar
+
+2. **Navigate to AI Providers**
+
+   - Select **AI Providers**, then click **Add**
+
+3. **Add Groq Provider**
+
+   - From the provider list, select **Groq** (OpenAI-compatible)
+
+4. **Enter Connection Details**
+
+   - **Base URL**: Leave default unless using a proxy (default `https://api.groq.com/openai/v1`)
+   - **API Key**: Paste your Groq API key
+   - **Model preferences**: Choose a model (e.g., `llama3-8b-8192`, `mixtral-8x7b-32768`, `gemma-7b-it`)
+
+5. **Save Configuration**
+   - Click **Save** and ensure Groq appears in your AI Providers
