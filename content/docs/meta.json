@@ -3,7 +3,9 @@
     "index",
     "getting-started",
     "changelog",
+    "extensions",
     "---Guides---",
-    "providers"
+    "providers",
+    "extensions-guide"
   ]
 }
